@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(248, 144, 196);
+        }
+        div{
+            width: 500px;
+            height: 600px;
+            background-color: chartreuse;
+            margin-top: 70px;
+            margin-left: 450px;
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+        }
+        #a{
+            background-color: darkgrey;
+            font-size: 30px;
+            border-radius: 15px;
+            padding-left: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #a:hover{
+            background-color: lightgrey;
+            color: royalblue;
+        }
+        #b{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 70px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #c{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #d{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #e{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 70px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #f{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #g{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #h{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 70px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #i{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #j{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #k{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 78px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #l{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 50px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #m{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 50px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #n{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 50px;
+            padding-right: 10px;
+            padding-left: 12px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #o{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 70px;
+            margin-top: 50px;
+            border-radius: 5px;
+            padding: 2px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #p{
+            background-color: azure;
+            font-size: 40px;
+            border-radius: 5px;
+            margin-left: 76px;
+            padding: 9px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 12px;
+            padding-right: 12px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #q{
+            background-color: azure;
+            font-size: 40px;
+            border-radius: 5px;
+            margin-left: 50px;
+            padding: 8px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #clear{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 65px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #div{
+            background-color: azure;
+            font-size: 40px;
+            margin-left: 290px;
+            border-radius: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            box-shadow: 2px 2px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><br><br><br>
+            <input id="a" placeholder="">
+        </center><br>
+        <input id="clear" type="button" value="C" onclick="clean()">
+        <input id="div" type="button" value="/" onclick="div()"><br><br>
+        <input id="b" type="button" value="1" onclick="one()">
+        <input id="c" type="button" value="2" onclick="two()">
+        <input id="d" type="button" value="3" onclick="three()">
+        <input id="l" type="button" value="+" onclick="add()">
+        <input id="e" type="button" value="4" onclick="four()">
+        <input id="f" type="button" value="5" onclick="five()">
+        <input id="g" type="button" value="6" onclick="six()">
+        <input id="m" type="button" value="-" onclick="sub()">
+        <input id="h" type="button" value="7" onclick="seven()">
+        <input id="i" type="button" value="8" onclick="eight()">
+        <input id="j" type="button" value="9" onclick="nine()">
+        <input id="n" type="button" value="*" onclick="mul()">
+        <input id="o" type="button" value="%" onclick="mod()">
+        <input id="k" type="button" value="0" onclick="zero()">
+        <input id="p" type="button" value="." onclick="dot()">
+        <input id="q" type="button" value="=" onclick="equals()">
+    </div>
+    <script>
+        function one()
+        {
+            var a1 = document.getElementById("b").value
+            document.getElementById("a").value = a1
+        }
+        function two()
+        {
+            var a2 = document.getElementById("c").value
+            document.getElementById("a").value = a2
+        }
+        function three()
+        {
+            var a3 = document.getElementById("d").value
+            document.getElementById("a").value = a3
+        }
+        function four()
+        {
+            var a4 = document.getElementById("e").value
+            document.getElementById("a").value = a4
+        }
+        function five()
+        {
+            var a5 = document.getElementById("f").value
+            document.getElementById("a").value = a5
+        }
+        function six()
+        {
+            var a6 = document.getElementById("g").value
+            document.getElementById("a").value = a6
+        }
+        function seven()
+        {
+            var a7 = document.getElementById("h").value
+            document.getElementById("a").value = a7
+        }
+        function eight()
+        {
+            var a8 = document.getElementById("i").value
+            document.getElementById("a").value = a8
+        }
+        function nine()
+        {
+            var a9 = document.getElementById("j").value
+            document.getElementById("a").value = a9
+        }
+        function zero()
+        {
+            var a10 = document.getElementById("k").value
+            document.getElementById("a").value = a10
+        }
+        function add()
+        {
+            var  b1= document.getElementById("l").value
+            document.getElementById("a").value = b1
+        }
+        function sub()
+        {
+            var b2 = document.getElementById("m").value
+            document.getElementById("a").value = b2
+        }
+        function mul()
+        {
+            var b3 = document.getElementById("n").value
+            document.getElementById("a").value = b3
+        }
+        function div()
+        {
+            var b4 = document.getElementById("").value
+            document.getElementById("a").value = b4
+        }
+        function mod()
+        {
+            var b5 = document.getElementById("o").value
+            document.getElementById("a").value = b5
+        }
+        function dot()
+        {
+            var b6 = document.getElementById("p").value
+            document.getElementById("a").value = b6
+        }
+        function equals()
+        {
+            var b7 = document.getElementById("q").value
+            document.getElementById("a").value = b7
+        }
+        function clean()
+        {
+            var b8 = document.getElementById("clear").value
+            document.getElementById("a").value = b8
+        }
+        function div()
+        {
+            var b9 = document.getElementById("div").value
+            document.getElementById("a").value = b9
+        }
+    </script>
+</body>
+</html>
